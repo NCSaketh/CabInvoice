@@ -47,9 +47,9 @@ public class CabInvoiceTest {
                           new Ride(0.1, 1)};
         Ride[] rides2 = { new Ride(3.0, 5),
                           new Ride(0.2, 1)};
-        invoiceGenerator.addRides( "user1", rides1);
-        invoiceGenerator.addRides( "user2", rides2);
-        InvoiceSummary summary = invoiceGenerator.invoiceService("user2");
+        invoiceGenerator.addRides( "1", rides1);
+        invoiceGenerator.addRides( "2", rides2);
+        InvoiceSummary summary = invoiceGenerator.invoiceService("2");
         InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 40.0);
         Assert.assertEquals(expectedInvoiceSummary, summary);
     }

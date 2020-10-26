@@ -22,8 +22,7 @@ public class CabInvoiceTest {
         double fare = invoiceGenerator.calculateFare(distance, time);
         Assert.assertEquals(5, fare, 0.0);
     }
-<<<<<<< HEAD
-=======
+
 
     @Test
     public void givenMultipleRides_ShouldReturnTotalFare() {
@@ -35,5 +34,4 @@ public class CabInvoiceTest {
     }
 
     
->>>>>>> UC2_MultipleRides
 }

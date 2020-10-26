@@ -21,4 +21,12 @@ public class InvoiceGenerator {
         return new InvoiceSummary(rides.length, totalFare);
 
     }
+
+    public InvoiceSummary invoiceService(String userID) {
+        return calculateFare(RideRepository.userRidesHashMap.get(userID));
+    }
+
+    public void addRides(String userID, Ride[] rides) {
+        RideRepository.userRidesHashMap.put(userID, rides);
+    }
 }

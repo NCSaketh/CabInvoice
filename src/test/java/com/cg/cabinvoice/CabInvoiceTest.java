@@ -23,6 +23,10 @@ public class CabInvoiceTest {
         Assert.assertEquals(5, fare, 0.0);
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> UC4_InvoiceServiceWithRideRepository
     @Test
     public void givenMultipleRides_ShouldReturnInvoiceSummary() {
         Ride[] rides = { new Ride(2.0, 5),
@@ -32,5 +36,17 @@ public class CabInvoiceTest {
         Assert.assertEquals(expectedInvoiceSummary, summary);
     }
 
+    @Test
+    public void givenUserId_WhenPresentInRideRepository_ShouldReturnInvoiceSummary() {
+        Ride[] rides1 = { new Ride(2.0, 5),
+                          new Ride(0.1, 1)};
+        Ride[] rides2 = { new Ride(3.0, 5),
+                          new Ride(0.2, 1)};
+        invoiceGenerator.addRides( "1", rides1);
+        invoiceGenerator.addRides( "2", rides2);
+        InvoiceSummary summary = invoiceGenerator.invoiceService("2");
+        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 40.0);
+        Assert.assertEquals(expectedInvoiceSummary, summary);
+    }
     
 }

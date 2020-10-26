@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="com.cg.cabinvoice.CabInvoiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-10-26T19:48:13" hostname="LAPTOP-M4C7MB0K" time="0.006">
+<testsuite name="com.cg.cabinvoice.CabInvoiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-10-26T19:53:15" hostname="LAPTOP-M4C7MB0K" time="0.012">
   <properties/>
   <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.002"/>
-  <testcase name="givenMultipleRides_ShouldReturnTotalFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.002"/>
-=======
-<testsuite name="com.cg.cabinvoice.CabInvoiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-10-26T19:02:57" hostname="LAPTOP-M4C7MB0K" time="0.014">
-  <properties/>
-  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.003"/>
->>>>>>> UC3_EnhancedInvoice
-  <testcase name="givenDistanceAndTime_ShouldReturnTotalFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.0"/>
-  <testcase name="givenMultipleRides_ShouldReturnInvoiceSummary" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.01"/>
+  <testcase name="givenDistanceAndTime_ShouldReturnTotalFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.002"/>
+  <testcase name="givenMultipleRides_ShouldReturnInvoiceSummary" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

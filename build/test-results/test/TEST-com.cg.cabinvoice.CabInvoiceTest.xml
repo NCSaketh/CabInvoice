@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.cabinvoice.CabInvoiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-10-26T19:43:32" hostname="LAPTOP-M4C7MB0K" time="0.007">
+<testsuite name="com.cg.cabinvoice.CabInvoiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2020-10-26T19:58:42" hostname="LAPTOP-M4C7MB0K" time="0.008">
   <properties/>
-  <testcase name="givenLessDistanceAndTime_PremiumRide_ShouldReturnTotalFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.001"/>
-  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.0"/>
+  <testcase name="givenLessDistanceAndTime_PremiumRide_ShouldReturnTotalFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.002"/>
+  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.001"/>
   <testcase name="givenUserId_WhenPresentInRideRepository_ShouldReturnInvoiceSummary" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.004"/>
   <testcase name="givenDistanceAndTime_ShouldReturnTotalFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.0"/>
   <testcase name="givenPremiumRide_ShouldReturnTotalFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.0"/>

@@ -1,5 +1,7 @@
 package com.cg.cabinvoice;
 
+import org.jetbrains.annotations.NotNull;
+
 public class InvoiceGenerator {
 
     private static final int COST_PER_TIME = 1;
@@ -11,11 +13,12 @@ public class InvoiceGenerator {
         return fare>5 ? fare : 5;
     }
 
-    public double calculateFare(@org.jetbrains.annotations.NotNull Ride[] rides) {
+    public InvoiceSummary calculateFare(@NotNull Ride[] rides) {
         double totalFare = 0;
         for(Ride ride : rides) {
             totalFare += this.calculateFare(ride.distance, ride.time);
         }
-        return totalFare;
+        return new InvoiceSummary(rides.length, totalFare);
+
     }
 }

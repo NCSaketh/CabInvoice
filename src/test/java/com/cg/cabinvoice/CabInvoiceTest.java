@@ -42,12 +42,15 @@ public class CabInvoiceTest {
     }
 
     @Test
-    public void givenUserId_WhenExistsInRideRepository_ShouldReturnInvoiceSummary() {
-        Ride[] rides = { new Ride(2.0, 5),
-                         new Ride(0.1, 1)};
-        invoiceGenerator.addRides( "userID", rides);
-        InvoiceSummary summary = invoiceGenerator.invoiceService("userID");
-        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 30.0);
+    public void givenUserId_WhenPresentInRideRepository_ShouldReturnInvoiceSummary() {
+        Ride[] rides1 = { new Ride(2.0, 5),
+                          new Ride(0.1, 1)};
+        Ride[] rides2 = { new Ride(3.0, 5),
+                          new Ride(0.2, 1)};
+        invoiceGenerator.addRides( "user1", rides1);
+        invoiceGenerator.addRides( "user2", rides2);
+        InvoiceSummary summary = invoiceGenerator.invoiceService("user2");
+        InvoiceSummary expectedInvoiceSummary = new InvoiceSummary(2, 40.0);
         Assert.assertEquals(expectedInvoiceSummary, summary);
     }
     

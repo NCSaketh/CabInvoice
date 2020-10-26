@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.cg.cabinvoice.CabInvoiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-10-26T19:20:24" hostname="LAPTOP-M4C7MB0K" time="0.008">
+<testsuite name="com.cg.cabinvoice.CabInvoiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2020-10-26T19:25:06" hostname="LAPTOP-M4C7MB0K" time="0.009">
   <properties/>
-  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.002"/>
-  <testcase name="givenUserId_WhenExistsInRideRepository_ShouldReturnInvoiceSummary" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.005"/>
+  <testcase name="givenLessDistanceAndTime_ShouldReturnMinimumFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.001"/>
+  <testcase name="givenUserId_WhenPresentInRideRepository_ShouldReturnInvoiceSummary" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.005"/>
   <testcase name="givenDistanceAndTime_ShouldReturnTotalFare" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.0"/>
   <testcase name="givenMultipleRides_ShouldReturnInvoiceSummary" classname="com.cg.cabinvoice.CabInvoiceTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

@@ -23,10 +23,6 @@ public class CabInvoiceTest {
         Assert.assertEquals(5, fare, 0.0);
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> UC4_InvoiceServiceWithRideRepository
     @Test
     public void givenMultipleRides_ShouldReturnInvoiceSummary() {
         Ride[] rides = { new Ride(2.0, 5),
